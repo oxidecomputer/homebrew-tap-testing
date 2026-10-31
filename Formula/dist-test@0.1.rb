@@ -1,20 +1,20 @@
 class DistTestAT01 < Formula
   desc "Test program for oxidecomputer/cargo-dist releases"
   homepage "https://github.com/oxidecomputer/dist-test"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oxidecomputer/dist-test/releases/download/v0.1.1/dist-test-aarch64-apple-darwin.tar.xz"
-      sha256 "93991263211b81c7e79044952d0d63683f2bc9ee208dcd3bd2af93a3a70157d1"
+      url "https://github.com/oxidecomputer/dist-test/releases/download/v0.1.2/dist-test-aarch64-apple-darwin.tar.xz"
+      sha256 "cb49b1e25641c3b974ef0371a36fa460bbaa0c3b3313975e579063fe07bb4931"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oxidecomputer/dist-test/releases/download/v0.1.1/dist-test-x86_64-apple-darwin.tar.xz"
-      sha256 "b242b7427f800dc7f476e827a86c3be082e5f8b4fd1394ae9f6ddf62a446fd80"
+      url "https://github.com/oxidecomputer/dist-test/releases/download/v0.1.2/dist-test-x86_64-apple-darwin.tar.xz"
+      sha256 "70337d941c2b0b6754b86e5a6b6c7d89960fd0a1a42ab01e5a864e4806d94340"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/oxidecomputer/dist-test/releases/download/v0.1.1/dist-test-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "8d764933ea45f70350625f76e540a0f9f788dcd95b5c6ab6c9702eacb326ee64"
+    url "https://github.com/oxidecomputer/dist-test/releases/download/v0.1.2/dist-test-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "3f2dcb8ecc4d5f453626b27e7ae54ee52195c5742890061412b3bddf0f9def0d"
   end
   license "MPL-2.0"
 
